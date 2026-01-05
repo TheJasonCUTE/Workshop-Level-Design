@@ -1,24 +1,51 @@
-Saved/ShaderDebugInfo/PCD3D_SM6/WorldGridMaterial_8fbb4b0fc93e2178/Default/DDCKey-Editor.txt
-Saved/Logs/Workshop-Level-Design.log
-Saved/Logs/Workshop-Level-Design-backup-2026.01.05-13.59.54.log
-Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
-Saved/Config/CrashReportClient/UECC-Windows-886A5C14465162D404D9359F2000607F/CrashReportClient.ini
-Saved/AutoScreenshot.png
-Intermediate/CachedAssetRegistry_0.bin
-Saved/ShaderDebugInfo/PCD3D_SM6/WorldGridMaterial_8fbb4b0fc93e2178/Default/DDCKey-Editor.txt
-Saved/Logs/Workshop-Level-Design.log
-Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
-Saved/AutoScreenshot.png
-Intermediate/CachedAssetRegistry_0.bin
-Saved/ShaderDebugInfo/PCD3D_SM6/WorldGridMaterial_8fbb4b0fc93e2178/Default/DDCKey-Editor.txt
-Saved/Logs/Workshop-Level-Design.log
-Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
-Saved/AutoScreenshot.png
-Intermediate/CachedAssetRegistry_0.bin
-Intermediate/CachedAssetRegistry_0.bin
-Saved/AutoScreenshot.png
-Saved/Config/CrashReportClient/UECC-Windows-3C36D4DE4B2C3CC051BDEBA17996B39E/CrashReportClient.ini
-Saved/Config/WindowsEditor/EditorPerProjectUserSettings.ini
-Saved/Logs/Workshop-Level-Design-backup-2026.01.05-14.02.21.log
-Saved/Logs/Workshop-Level-Design.log
-Saved/ShaderDebugInfo/PCD3D_SM6/WorldGridMaterial_8fbb4b0fc93e2178/Default/DDCKey-Editor.txt
+# Ignore all files by default, but scan all directories.
+*
+!*/
+
+# Do not ignore git files in the root of the repo.
+!/.git*
+
+# Do not ignore current project's `.uproject`.
+!/*.uproject
+
+# Do not ignore source, config and plugins dirs.
+!/Source/**
+!/Config/**
+!/Plugins/**
+
+# Only allow .uasset and .umap files from /Content dir.
+# They're tracked by git-lfs, don't forget to track other
+# files if adding them here.
+!/Content/**/*.uasset
+!/Content/**/*.umap
+
+# Allow any files from /RawContent dir.
+# Any file in /RawContent dir will be managed by git lfs.
+!/RawContent/**/*
+
+# OS/platform generated files.
+
+# Windows
+ehthumbs.db
+Thumbs.db
+
+# Mac OS X
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Visual Studio
+.vs
